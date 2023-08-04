@@ -1,0 +1,85 @@
+html {
+    margin: 0;
+}
+
+
+
+.container {
+    display: grid;
+    max-width: 1120px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-inline: auto;
+    column-gap: 24px;
+    row-gap: 40px;
+}
+
+.item-1 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 10;
+}
+
+.item-2 {
+    background-color: green;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-3 {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-4 {
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-5 {
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-6 {
+    background-color: salmon;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item-1 {
+        grid-column: 1/ 4;
+    }
+}
